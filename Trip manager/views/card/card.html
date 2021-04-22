@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="UTF-8">
+    <title>Card !</title>
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
+    <link href="../../node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../node_modules/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
+    
+    </head>
+    <style>
+        ul {
+            list-style-type: none;
+        }
+        body{
+            background-color: white;
+        }
+    </style>
+    <body>
+        <div class="container-fluid" >
+            <h1 id="title"></h1>
+            <div class="d-flex justify-content-around">
+                <img width="350px" height="300px">
+                <div class="d-flex flex-column pl-4">
+                    <h2 id="destination"></h2>
+                    <p id="description"></p>
+                    <p id="advantage"></p>
+                    <h5 id="price"></h5>
+                </div>
+            </div>
+            <div id="actions">
+
+            </div>
+        </div>
+    <script>
+        window.controllers.loadController('card');
+    </script>
+    </body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="UTF-8">
+    <title>Home!</title>
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
+    <link href="../../node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../node_modules/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
+    
+    </head>
+    <style>
+        ul {
+            list-style-type: none;
+        }
+        body{
+            background-color: white;
+        }
+    </style>
+    <body>
+        <h1 class="text-center bg-light col-4 mx-auto mt-2 col card shadow">Liste des voyages</h1>
+
+        <div class="container-fluid" >
+            <ul id="ul" >
+
+            </ul>
+            <i id="add-trip" class="fa-2x fas fa-plus-circle pl-5"></i>
+        </div>
+    <script>
+        window.controllers.loadController('home');
+    </script>
+    </body>
+</html>
